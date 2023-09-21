@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+      {% include 'nav.html' %}
+    </header>
+
+    <form method="POST" action="{% url 'save_pass' %}">
+        {% csrf_token %}
+        <div class = "container">
+          <div class="form-group">
+            <label for="login">Login:</label>
+            <input type="text" class="form-control" id="login" name="login" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+          </div>
+          <div class="form-group mb-3">
+              <label for="website">Website URL:</label>
+              <input type="url" class="form-control" id="website" name="website" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Save Password</button>
+        </div>
+        
+        
+    </form>
+
+    
+</body>
+</html>
