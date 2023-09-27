@@ -69,7 +69,7 @@ Open your web browser and go to `http://localhost:8000` to access the Password G
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
 
 ## Technologies
 
